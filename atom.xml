@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>JAY-blog</title>
   
-  <subtitle>daydayup</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <subtitle>但偏偏风渐渐把距离吹得好远</subtitle>
+  <link href="https://liminghjh.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2023-11-21T03:01:28.022Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://liminghjh.github.io/"/>
+  <updated>2023-11-23T15:33:50.298Z</updated>
+  <id>https://liminghjh.github.io/</id>
   
   <author>
     <name>JAY</name>
@@ -17,19 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hjh_blog</title>
-    <link href="http://example.com/2023/11/20/hjh-blog/"/>
-    <id>http://example.com/2023/11/20/hjh-blog/</id>
-    <published>2023-11-20T09:58:09.000Z</published>
-    <updated>2023-11-21T03:01:28.022Z</updated>
+    <title>sql</title>
+    <link href="https://liminghjh.github.io/2023/11/23/mysql/"/>
+    <id>https://liminghjh.github.io/2023/11/23/mysql/</id>
+    <published>2023-11-23T15:06:04.805Z</published>
+    <updated>2023-11-23T15:33:50.298Z</updated>
     
-    <content type="html"><![CDATA[<p><em>大苏打实打实大苏打撒旦</em></p>]]></content>
+    <content type="html"><![CDATA[<p>使用语句<br><img src="https://cdn.nlark.com/yuque/0/2023/png/35810665/1696988647134-deda9960-f38f-4961-99df-b88512241e3d.png#averageHue=%23f0f0f0&clientId=uc56f3481-f7a5-4&from=paste&height=441&id=ue2596852&originHeight=551&originWidth=935&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=151943&status=done&style=none&taskId=u2031fb56-be23-462a-a0c6-4357562119f&title=&width=748" alt="image.png"></p><ol><li>在数据后面加‘号判断是不是字符串，有没有sql注入</li><li>order by 数字#根据第几列来排序，可以用来确定列数</li><li>union select 1,2,3….(和列数一样位数的数字)来判断显示位在哪里</li><li>union select 1,database(),version()来判断当前数据库名称和数据库版本</li><li>select group_concat(table_name)from information_schema.tables where table_schema&#x3D;database();语句进行查询当前数据库的所有表格</li></ol><p><code>关于第5步的解释，sql中有information_schema这一数据库中有tables的表名，其中存储了所有表的信息，table_schema是指表格的数据库这一参数，所以就是用当前的数据库进行筛选，筛选出所有参数为当前数据库的表的名字（table_name），group_concat（）函数是让所有信息显示在一个格子里，实现一个显示位显示多组信息的功能。</code><br>注意：所有数据库名表名因为有特殊字符得加<code> </code>引用如</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select * <span class="keyword">from</span> `user`;</span><br><span class="line"><span class="comment">#因为有些特殊字符无法显示</span></span><br><span class="line">如</span><br><span class="line">select * <span class="keyword">from</span> Fl@@@gg<span class="comment">#可能就无法输出</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;em&gt;大苏打实打实大苏打撒旦&lt;/em&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;使用语句&lt;br&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2023/png/35810665/1696988647134-deda9960-f38f-4961-99df-b88512241e3d.png#averageHue=%23f0</summary>
       
     
     
@@ -38,18 +37,25 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/11/20/hello-world/"/>
-    <id>http://example.com/2023/11/20/hello-world/</id>
-    <published>2023-11-20T09:54:19.867Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
+    <title>请求响应</title>
+    <link href="https://liminghjh.github.io/2023/11/23/%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94/"/>
+    <id>https://liminghjh.github.io/2023/11/23/%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94/</id>
+    <published>2023-11-23T15:05:29.590Z</published>
+    <updated>2023-11-23T15:31:49.150Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<ul><li>常用</li></ul><p>get&#x2F;head&#x2F;head(head就是没有响应正文的get)</p><ul><li>x-forwarded-for</li></ul><p>这个头用于确定没挂代理的ip（可作假）<br>客户端&#x3D;&gt;（正向代理&#x3D;&gt;透明代理&#x3D;&gt;服务器反向代理&#x3D;&gt;）Web服务器</p><ul><li>referer☞从什么页面过来的</li><li>User-agent☞什么设备来的Windows&#x2F;安卓&#x2F;……</li><li>普通post请求：message&#x3D;adsd<ul><li>对值进行请求：message&#x3D;{“key”:”admin”}</li></ul></li></ul><h1 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h1><ul><li>同源策略，同源指域名，端口（默认80端口），协议</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;常用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;get&amp;#x2F;head&amp;#x2F;head(head就是没有响应正文的get)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;x-forwarded-for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个头用于确定没挂代理的ip（可作假）&lt;br&gt;客户端&amp;#x</summary>
       
     
     
