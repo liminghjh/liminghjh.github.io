@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JAY-blog</title>
+  
+  <subtitle>但偏偏风渐渐把距离吹得好远</subtitle>
+  <link href="https://liminghjh.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://liminghjh.github.io/"/>
+  <updated>2024-01-27T16:06:12.459Z</updated>
+  <id>https://liminghjh.github.io/</id>
+  
+  <author>
+    <name>JAY</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python</title>
+    <link href="https://liminghjh.github.io/2024/01/27/python/"/>
+    <id>https://liminghjh.github.io/2024/01/27/python/</id>
+    <published>2024-01-27T15:56:17.911Z</published>
+    <updated>2024-01-27T16:06:12.459Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="wi7bn"></a></p><h3 id="python基础"><a href="#python基础" class="headerlink" title="python基础"></a>python基础</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">intput(<span class="string">&quot;12345&quot;</span>)<span class="comment">#输出字符串</span></span><br><span class="line">Temp=<span class="built_in">eval</span>(intput(<span class="string">&#x27;123456&#x27;</span>))<span class="comment">#输出数字</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="comment">#使用</span></span><br><span class="line">turtle.penup()</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> turtle <span class="keyword">import</span>*<span class="comment">#导入所有的库函数</span></span><br><span class="line"><span class="comment">#使用</span></span><br><span class="line">penup()</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> turtle <span class="keyword">import</span> penup,setup</span><br><span class="line"><span class="comment">#使用</span></span><br><span class="line">penup()</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> turtle <span class="keyword">as</span> t<span class="comment">#下面turtle用t代替</span></span><br><span class="line">t.penup()</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    a=<span class="built_in">eval</span>(no)</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;error&quot;</span>)</span><br></pre></td></tr></table></figure><p><strong>函数定义</strong><br />def 函数名 ( 变量) ：<br />函数内容</p><ul><li>变量定义在函数外不能作为全局变量0</li></ul><p></p><p><strong>python 第三方库pip安装</strong><br />网址：<a href="https://pypi.org/">https://pypi.org/</a><br />查看已安装库：pip list</p><p><a name="aINZF"></a></p><h3 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h3><p>两个连续的幂运算</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span>**<span class="number">2</span>**<span class="number">3</span></span><br></pre></td></tr></table></figure><p>从右往左2的8次幂</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span>//<span class="number">3</span></span><br><span class="line"><span class="comment">#结果是1，小于等于结果的最大整数，（除法）</span></span><br></pre></td></tr></table></figure><p><a name="urJ17"></a></p><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>引号：<br />单引号双引号作用相同<br />三引号’’’可以跨行引用</p><p>注意：python用Unicode编码中英全一个字符</p><ul><li><p>转义字符“\r”用于把光标移到行开头</p></li><li><p>print（“\rabc{}”.format(a) , end&#x3D;””）end&#x3D;“”单行清0</p></li><li><p>import time 函数，time.sleep(0.05)停多少时间</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d=<span class="string">&quot;start&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:-^20&#125;.format(d)#居中用—填充</span></span><br></pre></td></tr></table></figure></li><li><p>s&#x3D;”abcd”,那么s[1:]代表从第二个元素到最后即“bcd”，s[::-1]意思是倒叙“dcba”</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span>.split(sep=<span class="literal">None</span>)</span><br><span class="line"><span class="comment">#返回一个列表，由str根据sep被分隔的部分组成</span></span><br><span class="line"><span class="comment">#&quot;A,B,C&quot;.split(&quot;,&quot;) 结果为 [&#x27;A&#x27;,&#x27;B&#x27;,&#x27;C&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">str</span>.join(<span class="built_in">iter</span>)</span><br><span class="line"><span class="comment">#在iter变量除最后元素外每个元素后增加一个str</span></span><br><span class="line"><span class="comment">#&quot;,&quot;.join(&quot;12345&quot;) 结果为  </span></span><br><span class="line"><span class="comment">#&quot;1,2,3,4,5&quot; #主要用于字符串分隔等</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><a name="D5O2H"></a></p></li></ul><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p><a name="wEX8Z"></a></p><h4 id="常用库函数"><a href="#常用库函数" class="headerlink" title="常用库函数"></a>常用库函数</h4><p>随机数<br />seed（10）用于确定随机数</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span>*</span><br><span class="line">A=random()<span class="comment">#随机小数</span></span><br><span class="line">B=randint(<span class="number">1</span>,<span class="number">100</span>)<span class="comment">#[0,100]随机整数</span></span><br></pre></td></tr></table></figure><p>时间函数<br />time.clock已经弃用</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start =time.perf_counter()</span><br><span class="line">time=perf_counter-start</span><br></pre></td></tr></table></figure><p>lambda函数</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b=<span class="keyword">lambda</span> x,y,z:x**y**z</span><br><span class="line"><span class="built_in">print</span>(b(<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>))</span><br></pre></td></tr></table></figure><p>时间函数</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime<span class="comment">#只需导入datetime函数</span></span><br><span class="line"><span class="built_in">print</span>(datetime.now())<span class="comment">#输出时间</span></span><br><span class="line">A=datetime.now()<span class="comment">#定义一个datetime类</span></span><br><span class="line"><span class="built_in">print</span>(A.year)<span class="comment">#用A来输出年，月日时同理</span></span><br></pre></td></tr></table></figure><ul><li><p>直接输出datetime.now().year报错</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span>  datetime</span><br><span class="line">A=datetime.now()</span><br><span class="line"><span class="built_in">print</span>(A.strftime(<span class="string">&quot;%Y-%m-%d&quot;</span>))</span><br></pre></td></tr></table></figure><p>注意：用import时要用datetime.datetime.now()</p></li><li><p>sorted（）函数用于排序，但是默认从小到大，返回为列表<br><a name="Z6sJV"></a></p></li></ul><h4 id="函数规范"><a href="#函数规范" class="headerlink" title="函数规范"></a>函数规范</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">max</span>(a,b=<span class="number">2</span>)<span class="comment">#可选参数必须靠右</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">max1</span> (a,b,*c)<span class="comment">#可变数量参数</span></span><br><span class="line"></span><br><span class="line">max1(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)<span class="comment">#(3,4,5)为传入元组</span></span><br><span class="line"></span><br><span class="line">max1(a=<span class="number">1</span>,b=<span class="number">2</span>)<span class="comment">#可以直接传递形参方便阅读</span></span><br></pre></td></tr></table></figure><p>可变数量参数以元组形式存放</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">a</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span></span><br><span class="line"><span class="built_in">print</span>(a()[<span class="number">2</span>])<span class="comment">#输出4</span></span><br></pre></td></tr></table></figure><p>返回多个返回值时以元组保存</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">A</span>   (a,b,c):</span><br><span class="line">    A,B,C=a,b,c</span><br><span class="line">    <span class="keyword">return</span> A,B,C</span><br><span class="line">x,y,z=A(<span class="number">1</span>,<span class="number">5</span>,<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(x,y,z)</span><br><span class="line"><span class="comment">#输出1，5，3</span></span><br></pre></td></tr></table></figure><p><a name="AezUX"></a></p><h3 id="组合数据类型"><a href="#组合数据类型" class="headerlink" title="组合数据类型"></a>组合数据类型</h3><p>顺序类型<br /><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35810665/1684113979239-693074ee-1cd0-4627-842b-f953068c2881.jpeg"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">animal=(<span class="string">&quot;monkey&quot;</span>,<span class="string">&quot;cat&quot;</span>,<span class="string">&quot;dog&quot;</span>)<span class="comment">#初始化C</span></span><br><span class="line">a=animal[-<span class="number">1</span>]<span class="comment">#dog</span></span><br><span class="line">animal=(<span class="string">&quot;monkey&quot;</span>,<span class="string">&quot;cat&quot;</span>,<span class="string">&quot;dog&quot;</span>,(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>))</span><br><span class="line">b=animal[-<span class="number">1</span>][<span class="number">2</span>]<span class="comment">#3</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span>=[]</span><br><span class="line"><span class="built_in">list</span>.append(x)</span><br><span class="line">ls.insert(i,x)<span class="comment">#在列表ls的第i位置增加元素x</span></span><br><span class="line">ls.reverse()<span class="comment">#反转</span></span><br><span class="line">lt.index(<span class="number">0</span>)<span class="comment">#返回数值0的序列号</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A=&#123;<span class="number">4</span>，<span class="number">2</span>，（<span class="string">&quot;df&quot;</span>,<span class="number">5</span>）&#125;</span><br><span class="line"></span><br><span class="line">B=<span class="built_in">set</span>(<span class="string">&quot;happy&quot;</span>)</span><br><span class="line"><span class="comment"># 等效于B=&#123;h,a,p,y&#125;</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A=&#123;<span class="string">&quot;中国&quot;</span>:<span class="string">&quot;北京&quot;</span>,<span class="string">&quot;美国&quot;</span>:<span class="string">&quot;华盛顿&quot;</span>&#125;</span><br><span class="line">d = &#123;&#125;</span><br><span class="line">d[<span class="string">&quot;a&quot;</span>] = <span class="number">1</span></span><br><span class="line">d.get(<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>)</span><br><span class="line">d.get(k, &lt;default&gt;)<span class="comment">#键k存在，则返回相应值，不在则返回&lt;default&gt;值</span></span><br></pre></td></tr></table></figure><p><a name="Gbdy5"></a></p><h3 id="文件的打开"><a href="#文件的打开" class="headerlink" title="文件的打开"></a>文件的打开</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;f.txt&quot;</span>)<span class="comment">#默认只读</span></span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;f.txt&quot;</span>, <span class="string">&quot;rt&quot;</span>)</span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;f.txt&quot;</span>, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;f.txt&quot;</span>, <span class="string">&quot;b&quot;</span>)</span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;f.txt&quot;</span>, <span class="string">&quot;wb&quot;</span>)</span><br><span class="line"><span class="comment">#r读，w覆盖写，a续写</span></span><br></pre></td></tr></table></figure><p>注意：r，w要用双引号框起来</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s=t.read(<span class="number">5</span>)<span class="comment">#读取全部txt，，并且只要前5个</span></span><br><span class="line">s=t.readline(<span class="number">5</span>)<span class="comment">#只读一行中的前4=5个</span></span><br><span class="line">s=t.readlines(<span class="number">5</span>)<span class="comment">#返回一个列表，前五行为五个元素</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">txt=<span class="built_in">open</span>(<span class="string">&quot;E:/vscode code/code/python/text.txt&quot;</span>,<span class="string">&quot;r&quot;</span>,encoding=<span class="string">&quot;UTF-8&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(txt.read(<span class="number">10</span>))</span><br><span class="line">txt.seek(<span class="number">0</span>)<span class="comment">#0-&gt;光标回到开头，2-&gt;回到最后</span></span><br><span class="line">txt.close()</span><br></pre></td></tr></table></figure><p>注意：1.这里的文件路径用&#x2F;或者\<br />2.open中最好加encoding&#x3D;“UTF-8”，不然默认gbk容易报错（不知道为什么）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;wi7bn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;python基础&quot;&gt;&lt;a href=&quot;#python基础&quot; class=&quot;headerlink&quot; title=&quot;python基础&quot;&gt;&lt;/a&gt;python基础&lt;/h3&gt;&lt;figure class=&quot;highli</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++重拾</title>
+    <link href="https://liminghjh.github.io/2024/01/27/C++%E5%8A%9F%E8%83%BD%E9%87%8D%E6%8B%BE/"/>
+    <id>https://liminghjh.github.io/2024/01/27/C++%E5%8A%9F%E8%83%BD%E9%87%8D%E6%8B%BE/</id>
+    <published>2024-01-27T15:55:59.490Z</published>
+    <updated>2024-01-27T16:05:28.584Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> 大写字母  替换掉的值</span></span><br></pre></td></tr></table></figure><p>注意不用加分号</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a=<span class="number">0</span>;</span><br><span class="line">   <span class="type">char</span> b;</span><br><span class="line">   <span class="built_in">scanf</span>(<span class="string">&quot;%d\n%c&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;a=%d,b=%c&quot;</span>,a,b);</span><br></pre></td></tr></table></figure><p>上面的\n的作用是确保下一个字符不因为输入回车而读入<br />注意%d代表整形，%c代表字符型（用双引号连结）</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sizeof</span>(变量或者类型)</span><br><span class="line">#返回字节数，如<span class="type">int</span>返回<span class="number">4</span></span><br><span class="line">#对于数组，主函数使用<span class="keyword">sizeof</span>返回字节数，但是一旦调用数组，默认使用它的的指针，<span class="number">64</span>位计算机中<span class="keyword">sizeof</span>只能返回<span class="number">8</span>；</span><br></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">template &lt;typename T&gt;</span><br></pre></td></tr></table></figure><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">char</span> *p;</span><br><span class="line">    p=(<span class="type">char</span> *)<span class="built_in">malloc</span>(<span class="number">5</span>*<span class="keyword">sizeof</span>(<span class="type">char</span>));</span><br><span class="line"> <span class="comment">//p[i]</span></span><br><span class="line"><span class="built_in">free</span>(p);</span><br><span class="line"><span class="comment">//在堆中储存，最后要释放内存；</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>php</title>
+    <link href="https://liminghjh.github.io/2024/01/27/php/"/>
+    <id>https://liminghjh.github.io/2024/01/27/php/</id>
+    <published>2024-01-27T15:55:48.064Z</published>
+    <updated>2024-01-27T16:05:57.102Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="uL6me"></a></p><h2 id="弱类型"><a href="#弱类型" class="headerlink" title="弱类型"></a>弱类型</h2><p>&#x3D;&#x3D;&#x3D;严格相等<br />&#x3D;&#x3D;先转换后判断是否相等</p><ul><li>字符串和数字比较时<ul><li>“123asd12”——&gt;”123”</li><li>“admin”——&gt;”0”</li></ul></li><li>字符串和字符串比较时特殊<ul><li>“2e3”被转换成2的3次方“8”科学计数法</li><li>“0e1321320”&#x3D;&#x3D;“0e1546565”</li></ul></li></ul><p><img src="https://cdn.nlark.com/yuque/0/2023/png/35810665/1696348773558-0f0fbca8-179a-4e9a-8290-24905ab9b648.png#averageHue=%23cde79d&clientId=ub9e49193-8160-4&from=paste&height=572&id=uc6720229&originHeight=786&originWidth=1376&originalType=binary&ratio=1.375&rotation=0&showTitle=false&size=660387&status=done&style=none&taskId=u68acbd82-1372-43bb-af43-2f50cc60762&title=&width=1000.7272727272727" alt="image.png"></p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">file_exists（）<span class="comment">#判断文件夹是否存在</span></span><br><span class="line">trim（）<span class="comment">#清除字符串首末的空格</span></span><br><span class="line"><span class="title function_ invoke__">strrchr</span>(字符串<span class="number">1</span>，字符串<span class="number">2</span>)<span class="comment">#返回一个指针，指向字符串2在1中第一次重叠的地址</span></span><br><span class="line"><span class="title function_ invoke__">str_ireplace</span>(<span class="string">&#x27;::$DATA&#x27;</span>, <span class="string">&#x27;&#x27;</span>, <span class="variable">$file_ext</span>)<span class="comment">#在变量$file_ext中找&#x27;::$DATA&#x27;字符并替换成&#x27; &#x27;</span></span><br><span class="line"><span class="title function_ invoke__">move_uploaded_file</span>(<span class="variable">$temp_file</span>, <span class="variable">$img_path</span>)<span class="comment">#把上传的临时文件夹中的东西移动到指定文件夹    </span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure><p><a name="ufWZp"></a></p><h2 id="文件包含"><a href="#文件包含" class="headerlink" title="文件包含"></a>文件包含</h2><ul><li>include 和request两种包含</li></ul><p>语法：include “1.php”相当于在此处替换1.php的内容<br />request“1.php”<br />区别：include报错级别低，后续代码可以进行，request报错级别高，后续代码不能执行；</p><ul><li>路径</li></ul><p>绝对路径:C:&#x2F;windows&#x2F;index.php<br />相对路径:.&#x2F; 代表当前文件夹开始..&#x2F;代表上一级文件夹开始<br />include “index.php”相当于include“.&#x2F;index.php”属于相对路径</p><ul><li>@</li></ul><p>@抑制报错，但错误依旧存在；<br><a name="yBKDg"></a></p><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params"><span class="variable">$num_1</span>,<span class="variable">$num_2</span></span>)</span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="variable">$num_1</span>+<span class="variable">$num_2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><a name="TwtCP"></a></p><h2 id="个人问题"><a href="#个人问题" class="headerlink" title="个人问题"></a>个人问题</h2><ol><li>语句结束加“；”</li><li>函数名不加￥</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;uL6me&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;弱类型&quot;&gt;&lt;a href=&quot;#弱类型&quot; class=&quot;headerlink&quot; title=&quot;弱类型&quot;&gt;&lt;/a&gt;弱类型&lt;/h2&gt;&lt;p&gt;&amp;#x3D;&amp;#x3D;&amp;#x3D;严格相等&lt;br /&gt;&amp;#x3D;&amp;#x3</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>周报11.13</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.13%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.13%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
+    <published>2024-01-27T15:54:20.424Z</published>
+    <updated>2024-01-27T16:06:46.787Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="cf162eb8"></a></p><h3 id="学习Linux操作vim使用"><a href="#学习Linux操作vim使用" class="headerlink" title="学习Linux操作vim使用"></a>学习Linux操作vim使用</h3><p><a name="56a1c4c9"></a></p><h3 id="刷buu题"><a href="#刷buu题" class="headerlink" title="刷buu题"></a>刷buu题</h3><p><a name="c90dd22e"></a></p><h3 id="Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）"><a href="#Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）" class="headerlink" title="Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）"></a>Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）</h3><p><a name="90f04676"></a></p><h3 id="geek-做题easy-php"><a href="#geek-做题easy-php" class="headerlink" title="geek 做题easy_php"></a>geek 做题easy_php</h3><p><a name="e073ad4e"></a></p><h3 id="正在学习反序列化"><a href="#正在学习反序列化" class="headerlink" title="正在学习反序列化"></a>正在学习反序列化</h3><p><a name="YrANj"></a></p><h3 id="爬虫知识了解"><a href="#爬虫知识了解" class="headerlink" title="爬虫知识了解"></a>爬虫知识了解</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;cf162eb8&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;学习Linux操作vim使用&quot;&gt;&lt;a href=&quot;#学习Linux操作vim使用&quot; class=&quot;headerlink&quot; title=&quot;学习Linux操作vim使用&quot;&gt;&lt;/a&gt;学习Linux操作vim使</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>周报11.5</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.5%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.5%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
+    <published>2024-01-27T15:54:06.256Z</published>
+    <updated>2024-01-27T16:07:04.736Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="804a0841"></a></p><h1 id="11-5周报"><a href="#11-5周报" class="headerlink" title="11.5周报"></a>11.5周报</h1><p><a name="a19c221c"></a></p><h2 id="python爬虫学习"><a href="#python爬虫学习" class="headerlink" title="python爬虫学习"></a>python爬虫学习</h2><p>学习视频<a href="https://www.bilibili.com/video/BV1d54y1g7db/?p=12&spm_id_from=333.880.my_history.page.click">【11-理论课】下一步是什么？_哔哩哔哩_bilibili</a></p><p><a name="97d39be4"></a></p><h2 id="正则表达式学习"><a href="#正则表达式学习" class="headerlink" title="正则表达式学习"></a>正则表达式学习</h2><p>学习视频<a href="https://www.bilibili.com/video/BV19t4y1y7qP/?spm_id_from=333.880.my_history.page.click">正则表达式30分钟入门40分钟进阶（绝对能学会）_哔哩哔哩_bilibili</a></p><p><a name="fd4bb8a0"></a></p><h2 id="C-类，链表，python基础代码复习"><a href="#C-类，链表，python基础代码复习" class="headerlink" title="C++类，链表，python基础代码复习"></a>C++类，链表，python基础代码复习</h2><p>黑马程序员</p><p><a name="d25013f4"></a></p><h2 id="web-反序列化学习"><a href="#web-反序列化学习" class="headerlink" title="web-反序列化学习"></a>web-反序列化学习</h2><p>ctf-show</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;804a0841&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;11-5周报&quot;&gt;&lt;a href=&quot;#11-5周报&quot; class=&quot;headerlink&quot; title=&quot;11.5周报&quot;&gt;&lt;/a&gt;11.5周报&lt;/h1&gt;&lt;p&gt;&lt;a name=&quot;a19c221c&quot;&gt;&lt;/a&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>周报3.12</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.12%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.12%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
+    <published>2024-01-27T15:53:40.949Z</published>
+    <updated>2024-01-27T16:07:22.660Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="2aa09912"></a></p><h2 id="学习基本的php语法和html语法"><a href="#学习基本的php语法和html语法" class="headerlink" title="学习基本的php语法和html语法"></a>学习基本的php语法和html语法</h2><p><a name="2bae96ba"></a></p><h2 id="看教程制作一个简单登录界面"><a href="#看教程制作一个简单登录界面" class="headerlink" title="看教程制作一个简单登录界面"></a>看教程制作一个简单登录界面</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span> =<span class="string">&#x27;UTF-8&#x27;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>亡灵登录网站<span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;dl.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>账号：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;account&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>验证码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;登录&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$zh</span>=<span class="variable">$_POST</span>[<span class="string">&#x27;account&#x27;</span>];</span><br><span class="line"><span class="variable">$mm</span>=<span class="variable">$_POST</span>[<span class="string">&#x27;password&#x27;</span>];</span><br><span class="line"><span class="variable">$yz</span>=<span class="variable">$_POST</span>[<span class="string">&#x27;check&#x27;</span>];</span><br><span class="line"><span class="variable">$data</span>=[<span class="string">&#x27;账号&#x27;</span>=&gt;<span class="variable">$zh</span>,<span class="string">&#x27;密码&#x27;</span>=&gt;<span class="variable">$mm</span>,<span class="string">&#x27;验证码&#x27;</span>=&gt;<span class="variable">$yz</span>];</span><br><span class="line"><span class="keyword">foreach</span>(<span class="variable">$data</span> <span class="keyword">as</span> <span class="variable">$key</span>=&gt;<span class="variable">$item</span>)</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;你输入的<span class="subst">$key</span>为<span class="subst">$item</span>&lt;br/&gt;&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure><p><a name="a4f98c00"></a></p><h2 id="在ctfhub上刷基础题"><a href="#在ctfhub上刷基础题" class="headerlink" title="在ctfhub上刷基础题"></a>在ctfhub上刷基础题</h2><p>ps:碰到一道扫描目录的，正在找软件</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;2aa09912&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;学习基本的php语法和html语法&quot;&gt;&lt;a href=&quot;#学习基本的php语法和html语法&quot; class=&quot;headerlink&quot; title=&quot;学习基本的php语法和html语法&quot;&gt;&lt;/a&gt;学习基本</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>周报3.3</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.3%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.3%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
+    <published>2024-01-27T15:53:24.269Z</published>
+    <updated>2024-01-27T16:07:45.642Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="bf1590dc"></a></p><h1 id="学习了请求响应报文的基本元素和其意义"><a href="#学习了请求响应报文的基本元素和其意义" class="headerlink" title="学习了请求响应报文的基本元素和其意义"></a>学习了请求响应报文的基本元素和其意义</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GET /canonical.html HTTP/<span class="number">1.1</span></span><br><span class="line">Host: detectportal.firefox.com</span><br><span class="line">User-Agent: Mozilla/<span class="number">5.0</span> (Windows NT <span class="number">10.0</span>; Win64; x64; rv:<span class="number">109.0</span>) Gecko/<span class="number">20100101</span> Firefox/<span class="number">110.0</span></span><br><span class="line">Accept: *<span class="comment">/*</span></span><br><span class="line"><span class="comment">Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2</span></span><br><span class="line"><span class="comment">Accept-Encoding: gzip, deflate</span></span><br><span class="line"><span class="comment">Cache-Control: no-cache</span></span><br><span class="line"><span class="comment">Pragma: no-cache</span></span><br><span class="line"><span class="comment">Connection: close</span></span><br></pre></td></tr></table></figure><p><a name="409882cb"></a></p><h1 id="下载必要软件ida64，phpstudy-安装kali-linux下载Wireshark"><a href="#下载必要软件ida64，phpstudy-安装kali-linux下载Wireshark" class="headerlink" title="下载必要软件ida64，phpstudy,安装kali-linux下载Wireshark"></a>下载必要软件ida64，phpstudy,安装kali-linux下载Wireshark</h1><p><a name="340ecf25"></a></p><h1 id="一边刷入门题一边了解解题流程"><a href="#一边刷入门题一边了解解题流程" class="headerlink" title="一边刷入门题一边了解解题流程"></a>一边刷入门题一边了解解题流程</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">题目考点</span><br><span class="line">HTTP Method</span><br><span class="line">解题思路</span><br><span class="line">HTTP Method 是可以自定义的，并且区分大小写，直接用 CTFHUB 方法请求 index.php 即可拿到 flag.</span><br></pre></td></tr></table></figure><p><a name="5521c431"></a></p><h2 id="做一道爆破题认识base64编码"><a href="#做一道爆破题认识base64编码" class="headerlink" title="做一道爆破题认识base64编码"></a>做一道爆破题认识base64编码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">31</span>YWRtaW46Nzc3Nzc3Nw==</span><br></pre></td></tr></table></figure><p>第一次碰到完全没思路，跟着题解模仿了一遍</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;bf1590dc&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;学习了请求响应报文的基本元素和其意义&quot;&gt;&lt;a href=&quot;#学习了请求响应报文的基本元素和其意义&quot; class=&quot;headerlink&quot; title=&quot;学习了请求响应报文的基本元素和其意义&quot;&gt;&lt;/a&gt;学</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文件上传</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</id>
+    <published>2024-01-27T15:50:34.029Z</published>
+    <updated>2024-01-27T16:08:33.301Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>文件后缀的过滤<ul><li>直接改后缀上传，在用burpsuite改</li><li><img src="https://cdn.nlark.com/yuque/0/2023/png/35810665/1696071022916-598ef3d2-dab0-457d-a5d1-8befea16c751.png#averageHue=%23f1f0f0&clientId=u29254b37-63c7-4&from=paste&height=50&id=ua896e73a&originHeight=69&originWidth=437&originalType=binary&ratio=1.375&rotation=0&showTitle=false&size=5860&status=done&style=none&taskId=ue4bd3c89-1218-45d3-beb3-15c19ae9f6e&title=&width=317.8181818181818" alt="image.png"></li><li>filename&#x3D;“text.php”</li></ul></li></ul><p>一句话木马<br /><img src="https://cdn.nlark.com/yuque/0/2023/png/35810665/1699532871762-0ab6114f-5a06-4d33-98b8-846db2121e1a.png#averageHue=%23262b25&clientId=ud8762ddc-3db1-4&from=paste&height=443&id=u8fad764d&originHeight=554&originWidth=888&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=79195&status=done&style=shadow&taskId=u482d8830-3818-4bbb-a641-56495362cef&title=&width=710.4" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;文件后缀的过滤&lt;ul&gt;
+&lt;li&gt;直接改后缀上传，在用burpsuite改&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2023/png/35810665/1696071022916-598ef3d2-dab0</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>反射型xss</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E5%8F%8D%E5%B0%84%E5%9E%8Bxss/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E5%8F%8D%E5%B0%84%E5%9E%8Bxss/</id>
+    <published>2024-01-27T15:50:15.405Z</published>
+    <updated>2024-01-27T16:06:28.682Z</updated>
+    
+    <content type="html"><![CDATA[<p><a name="OB5c5"></a></p><h3 id="反射型xss"><a href="#反射型xss" class="headerlink" title="反射型xss"></a>反射型xss</h3><ol><li>先输入’”&lt;&gt;666检查是否有过滤</li><li>输入<b>55看看是否直接识别并读入</li><li>输入<script>alert(1)</script>试试有没有script屏蔽</li><li>有简单的屏蔽”<script>“字段的可以写<scri<script>pt></li><li><img scr="1" onerror="alert(1)"来弹窗<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;button&#x27;</span>).<span class="property">style</span>.<span class="property">color</span> = <span class="string">&#x27;red&#x27;</span>;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 上面的代码document指网页作为一个文档，修改第一个满足“button”的元素改颜色 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;指定的网址&quot;</span>&gt;</span>12<span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--  用于插入指定的网址--&gt;</span></span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;OB5c5&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;反射型xss&quot;&gt;&lt;a href=&quot;#反射型xss&quot; class=&quot;headerlink&quot; title=&quot;反射型xss&quot;&gt;&lt;/a&gt;反射型xss&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;先输入’”&amp;lt;&amp;gt;666检查是否</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>工具使用</title>
+    <link href="https://liminghjh.github.io/2024/01/27/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <id>https://liminghjh.github.io/2024/01/27/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</id>
+    <published>2024-01-27T15:48:11.996Z</published>
+    <updated>2024-01-27T16:08:12.407Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1.dirsearch</strong><br />使用：去目录页下按cmd<br />输入python dirsearch.py -u (网址) -t （线程数）<br /><strong>2.sqlmapa</strong><br />使用：去目录页下按cmd<br />输入python sqlmap -u (网址) 0<br />3.mysql <br />使用：phpstudy中打开cmd，mysql -u root -p后输入密码；<br />语句：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">show databases;<span class="comment">#看所有数据库</span></span><br><span class="line"><span class="keyword">use</span>数据库的名字;<span class="comment">#打开数据库</span></span><br><span class="line">create database 数据库的名字</span><br><span class="line">create table <span class="title function_ invoke__">user</span> (id <span class="keyword">int</span>(<span class="number">12</span>),name <span class="title function_ invoke__">varchar</span>(<span class="number">5</span>));<span class="comment">#创建表（注：varchar为字符串）</span></span><br><span class="line">show tables<span class="comment">#查看表</span></span><br><span class="line">insert into 表名 (id,name) <span class="title function_ invoke__">values</span>(<span class="number">128</span>,<span class="string">&#x27;hjh&#x27;</span>),(<span class="number">129</span>,<span class="string">&#x27;hlx&#x27;</span>);<span class="comment">#插入数据，前面输入表头名，后输入数据，用‘，’隔开</span></span><br><span class="line">select * <span class="keyword">from</span> user where id=<span class="number">128</span>;<span class="comment">#基于id查询表格，注：若没有where,显示所有信息，必须用use打开后才可访问；</span></span><br><span class="line">update user set name=<span class="string">&#x27;黎明&#x27;</span> where id=<span class="number">128</span>;<span class="comment">#更改user表中id为128项的name值；</span></span><br><span class="line">delete <span class="keyword">from</span> user where id=<span class="number">128</span>;<span class="comment">#删除表数据</span></span><br><span class="line">order by处于上面where的位置，意思为排序，从小到大，如order by id;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>4.开本地服务器<br />使用：cmd按下httpd<br />5.ida</p><ol><li>打开注意大多数打开64位</li><li>文件可以拖进，F5看解析后的代码，空格可以看源码的地址</li><li>结构体struct在ida中可以菜单栏添加，d添加结构体的内容，alt+q可以在属性改成当前出现的结构体，右键可以选中数组</li><li>adcu显示方式；a-字符串；d-数据；c-代码；u-不确定</li><li>g跳转</li><li>窗口复位-&gt;windows-&gt;复位</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;1.dirsearch&lt;/strong&gt;&lt;br /&gt;使用：去目录页下按cmd&lt;br /&gt;输入python dirsearch.py -u (网址) -t （线程数）&lt;br /&gt;&lt;strong&gt;2.sqlmapa&lt;/strong&gt;&lt;br /&gt;使用：去目录页下按</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sql</title>
+    <link href="https://liminghjh.github.io/2023/11/23/mysql/"/>
+    <id>https://liminghjh.github.io/2023/11/23/mysql/</id>
+    <published>2023-11-23T15:06:04.805Z</published>
+    <updated>2023-11-23T15:33:50.298Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用语句<br><img src="https://cdn.nlark.com/yuque/0/2023/png/35810665/1696988647134-deda9960-f38f-4961-99df-b88512241e3d.png#averageHue=%23f0f0f0&clientId=uc56f3481-f7a5-4&from=paste&height=441&id=ue2596852&originHeight=551&originWidth=935&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=151943&status=done&style=none&taskId=u2031fb56-be23-462a-a0c6-4357562119f&title=&width=748" alt="image.png"></p><ol><li>在数据后面加‘号判断是不是字符串，有没有sql注入</li><li>order by 数字#根据第几列来排序，可以用来确定列数</li><li>union select 1,2,3….(和列数一样位数的数字)来判断显示位在哪里</li><li>union select 1,database(),version()来判断当前数据库名称和数据库版本</li><li>select group_concat(table_name)from information_schema.tables where table_schema&#x3D;database();语句进行查询当前数据库的所有表格</li></ol><p><code>关于第5步的解释，sql中有information_schema这一数据库中有tables的表名，其中存储了所有表的信息，table_schema是指表格的数据库这一参数，所以就是用当前的数据库进行筛选，筛选出所有参数为当前数据库的表的名字（table_name），group_concat（）函数是让所有信息显示在一个格子里，实现一个显示位显示多组信息的功能。</code><br>注意：所有数据库名表名因为有特殊字符得加<code> </code>引用如</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select * <span class="keyword">from</span> `user`;</span><br><span class="line"><span class="comment">#因为有些特殊字符无法显示</span></span><br><span class="line">如</span><br><span class="line">select * <span class="keyword">from</span> Fl@@@gg<span class="comment">#可能就无法输出</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用语句&lt;br&gt;&lt;img src=&quot;https://cdn.nlark.com/yuque/0/2023/png/35810665/1696988647134-deda9960-f38f-4961-99df-b88512241e3d.png#averageHue=%23f0</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>请求响应</title>
+    <link href="https://liminghjh.github.io/2023/11/23/%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94/"/>
+    <id>https://liminghjh.github.io/2023/11/23/%E8%AF%B7%E6%B1%82%E5%93%8D%E5%BA%94/</id>
+    <published>2023-11-23T15:05:29.590Z</published>
+    <updated>2023-11-23T15:31:49.150Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>常用</li></ul><p>get&#x2F;head&#x2F;head(head就是没有响应正文的get)</p><ul><li>x-forwarded-for</li></ul><p>这个头用于确定没挂代理的ip（可作假）<br>客户端&#x3D;&gt;（正向代理&#x3D;&gt;透明代理&#x3D;&gt;服务器反向代理&#x3D;&gt;）Web服务器</p><ul><li>referer☞从什么页面过来的</li><li>User-agent☞什么设备来的Windows&#x2F;安卓&#x2F;……</li><li>普通post请求：message&#x3D;adsd<ul><li>对值进行请求：message&#x3D;{“key”:”admin”}</li></ul></li></ul><h1 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h1><ul><li>同源策略，同源指域名，端口（默认80端口），协议</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;常用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;get&amp;#x2F;head&amp;#x2F;head(head就是没有响应正文的get)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;x-forwarded-for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个头用于确定没挂代理的ip（可作假）&lt;br&gt;客户端&amp;#x</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
