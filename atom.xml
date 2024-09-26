@@ -6,7 +6,7 @@
   <link href="https://liminghjh.github.io/atom.xml" rel="self"/>
   
   <link href="https://liminghjh.github.io/"/>
-  <updated>2024-01-27T16:06:12.459Z</updated>
+  <updated>2024-09-26T12:20:30.895Z</updated>
   <id>https://liminghjh.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java</title>
+    <link href="https://liminghjh.github.io/2024/09/26/java/"/>
+    <id>https://liminghjh.github.io/2024/09/26/java/</id>
+    <published>2024-09-26T12:15:54.274Z</published>
+    <updated>2024-09-26T12:20:30.895Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基础模板"><a href="#基础模板" class="headerlink" title="基础模板"></a>基础模板</h2><p>public class Main {</p><p>public static void main(String[] args) {</p><p>System.out.println(“123”);</p><pre><code>&#125;</code></pre><p>}</p><h2 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h2><ol><li>boolean 只能为 false 不能为 0</li><li>string-&gt;字符串：可以”i have”+5+”cookies”+false</li><li>main 函数也得在对象（类）中</li><li>java 中 new 创建堆实例时，不需要手动 delete 空间</li><li>java 中函数的参数的调用是值传递，一般变量是直接复制，类的传递是引用的复制，影响原本的类</li><li>C++中的类最后加；而 java 的类最后不需要（java 全部类结构导致）</li></ol><h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p>在 java 环境的目录默认 com 包</p><p>public 类能被任何位置 import（类）调用，默认只能包内调用（不用 import）</p><p>vscode 关于构造方法和基础 get，set 方法的快捷键，右键，源代码操作</p><p>内存图</p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1722887742851-0f946e3f-0b85-4804-bcdf-00e18f38a8a5.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;基础模板&quot;&gt;&lt;a href=&quot;#基础模板&quot; class=&quot;headerlink&quot; title=&quot;基础模板&quot;&gt;&lt;/a&gt;基础模板&lt;/h2&gt;&lt;p&gt;public class Main {&lt;/p&gt;
+&lt;p&gt;public static void main(String[] ar</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟机</title>
+    <link href="https://liminghjh.github.io/2024/09/26/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>https://liminghjh.github.io/2024/09/26/%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
+    <published>2024-09-26T12:15:54.269Z</published>
+    <updated>2024-09-26T12:19:24.179Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="网络连接模式"><a href="#网络连接模式" class="headerlink" title="网络连接模式"></a>网络连接模式</h2><p>桥接模式，使用主机网卡（寄生）</p><p>nat 网络模式，电脑建立局域网，给虚拟机建立内网 ip（平等独立）</p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1725812168166-eaf11107-167b-4ac0-bd8d-acbb8756f907.png"></p><p>解释：</p><ol><li>VMnet0：用真实主机网卡，相当于是真实主机，用真实网卡访问互联网</li><li>VMnet1：用虚拟网卡，只能与真实主机和同为 VMnet1 连接，不能通过真实主机访问互联网</li><li>VMnet8：用虚拟网卡，只能与真实主机和同为 VMnet8 连接，能通过真实主机访问互联网</li></ol><p>注意，初始 VM 会分配 VMnet1，VMnet8 地址段，不代表有相关的设备</p><h2 id="使用特色储存真实机的地址"><a href="#使用特色储存真实机的地址" class="headerlink" title="使用特色储存真实机的地址"></a>使用特色储存真实机的地址</h2><p>快照，保留一个状态的虚拟机，相当于给那个时间一个传送点，可以在此基础上有平行宇宙的虚拟机</p><p>vmware 可以储存真实机的地址</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;网络连接模式&quot;&gt;&lt;a href=&quot;#网络连接模式&quot; class=&quot;headerlink&quot; title=&quot;网络连接模式&quot;&gt;&lt;/a&gt;网络连接模式&lt;/h2&gt;&lt;p&gt;桥接模式，使用主机网卡（寄生）&lt;/p&gt;
+&lt;p&gt;nat 网络模式，电脑建立局域网，给虚拟机建立内网 ip（平等</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="https://liminghjh.github.io/2024/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>https://liminghjh.github.io/2024/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</id>
+    <published>2024-09-26T12:15:54.260Z</published>
+    <updated>2024-09-26T12:19:42.195Z</updated>
+    
+    <content type="html"><![CDATA[<p>网课：<a href="https://www.bilibili.com/video/BV11T411q7Qw?p=2&vd_source=4486e55d4f02d9f3fa91e80b657485e6">https://www.bilibili.com/video/BV11T411q7Qw?p=2&vd_source&#x3D;4486e55d4f02d9f3fa91e80b657485e6</a></p><p>时间复杂度 O（n）量级</p><p>空间复杂度 S（n）量级</p><p>常对幂指阶</p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1711363297603-ba110120-9611-4ce3-838d-1744c34ce2ce.png"></p><p>栈：后进先出</p><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><p>插入：表+1，向后移，插入</p><p>删除：删除，向前移，表-1</p><p>typedef &lt;数据原名&gt; 别名#替换数据名称</p><p>例如:typedef struct student xuesheng</p><p>typedef struct student a&#x3D;xuesheng a</p><p>struct 类型，判断是否相等，不能直接等于，需要自行比较各元素是否相等</p><p>对连续表的操作：</p><ol><li>建立并初始化（无-》有）</li><li>销毁（有-》无）</li><li>插入</li><li>删除</li><li>按值按位查找</li><li>其他（判空，长度，输出）</li></ol><h6 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h6><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35810665/1712374430892-193c7130-fe7a-43bc-b3a8-4551810dfa7c.jpeg" alt="画板"></p><p>后进先出</p><h6 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h6><p>先进先出（堆为队列）</p><p>双端队列</p><p>两端都可以进行插入和删除操作</p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712376183732-4a09aee8-7965-4903-83c6-a60314691f96.png"></p><p>插入删除受限的双端队列</p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712376433002-3e0bce70-9519-4196-a7e1-0e78ce6b5b8b.png"></p><h3 id="表达式的计算"><a href="#表达式的计算" class="headerlink" title="表达式的计算"></a>表达式的计算</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712385031291-8cca743a-c572-426f-ba3f-0030da2fce31.png"></p><h5 id="后缀表达式"><a href="#后缀表达式" class="headerlink" title="后缀表达式"></a>后缀表达式</h5><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712385065583-cda992bc-bf29-4a7d-82c7-0cbde259431a.png"></p><h5 id="前缀表达式"><a href="#前缀表达式" class="headerlink" title="前缀表达式"></a>前缀表达式<img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712385108126-d82c21bf-b26b-4815-99ce-0f3aeaec8d1d.png"></h5><p>注意：后缀和前缀表达式由于相等优先级符号的问题，有很多不唯一的转换方法，所以计算机规定，<font style="color:#DF2A3F;background-color:#FBDE28;">中缀转后缀用右优先，中缀转左缀用左优先原则</font>，这样转换后唯一，符合算法定义</p><h5 id="中缀表达式的计算过程（以后缀为例子）"><a href="#中缀表达式的计算过程（以后缀为例子）" class="headerlink" title="中缀表达式的计算过程（以后缀为例子）"></a>中缀表达式的计算过程（以后缀为例子）</h5><h6 id="如何把中缀表达式转换成后缀表达式"><a href="#如何把中缀表达式转换成后缀表达式" class="headerlink" title="如何把中缀表达式转换成后缀表达式"></a>如何把中缀表达式转换成后缀表达式</h6><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712385499023-5fab26a1-f25f-4623-89d1-f5d63dbd00f4.png"></p><h6 id="如何计算后缀表达式"><a href="#如何计算后缀表达式" class="headerlink" title="如何计算后缀表达式"></a>如何计算后缀表达式</h6><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1712385541134-3bc0b6d6-6541-4d98-bafe-9a09985d1cb7.png"></p><p>将两种结合即可计算中缀表达式</p><h6 id="搜索树"><a href="#搜索树" class="headerlink" title="搜索树"></a>搜索树</h6><p>深度优先 dfs（找一解）用栈</p><p>宽度优先 bfs（ 找所有解）用队列</p><h6 id="树和森林和二叉树之间的转换"><a href="#树和森林和二叉树之间的转换" class="headerlink" title="树和森林和二叉树之间的转换"></a>树和森林和二叉树之间的转换</h6><h6 id="哈夫曼树"><a href="#哈夫曼树" class="headerlink" title="哈夫曼树"></a>哈夫曼树</h6><p>最优二叉树</p><p>度只为 2</p><p>树的路径长度：所有路径树之和</p><p>树的带权路径长度：<font style="color:#DF2A3F;">叶子节点</font>结点权重与路径长度的积<font style="color:#DF2A3F;">的和</font></p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1713842097656-e6e13af6-1dbe-4124-af01-3ea4b003941f.png"></p><p>用于不等长密码编译</p><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35810665/1713843881476-85ab74ed-160b-496a-b7d7-abc5d5a4b20b.png"></p><p>各编码之间不存在包含关系</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;网课：&lt;a href=&quot;https://www.bilibili.com/video/BV11T411q7Qw?p=2&amp;vd_source=4486e55d4f02d9f3fa91e80b657485e6&quot;&gt;https://www.bilibili.com/video/BV</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>python</title>
@@ -38,13 +100,13 @@
   </entry>
   
   <entry>
-    <title>C++重拾</title>
-    <link href="https://liminghjh.github.io/2024/01/27/C++%E5%8A%9F%E8%83%BD%E9%87%8D%E6%8B%BE/"/>
-    <id>https://liminghjh.github.io/2024/01/27/C++%E5%8A%9F%E8%83%BD%E9%87%8D%E6%8B%BE/</id>
+    <title>C++基础</title>
+    <link href="https://liminghjh.github.io/2024/01/27/C++%E5%9F%BA%E7%A1%80/"/>
+    <id>https://liminghjh.github.io/2024/01/27/C++%E5%9F%BA%E7%A1%80/</id>
     <published>2024-01-27T15:55:59.490Z</published>
-    <updated>2024-01-27T16:05:28.584Z</updated>
+    <updated>2024-09-26T12:19:31.446Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> 大写字母  替换掉的值</span></span><br></pre></td></tr></table></figure><p>注意不用加分号</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a=<span class="number">0</span>;</span><br><span class="line">   <span class="type">char</span> b;</span><br><span class="line">   <span class="built_in">scanf</span>(<span class="string">&quot;%d\n%c&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;a=%d,b=%c&quot;</span>,a,b);</span><br></pre></td></tr></table></figure><p>上面的\n的作用是确保下一个字符不因为输入回车而读入<br />注意%d代表整形，%c代表字符型（用双引号连结）</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sizeof</span>(变量或者类型)</span><br><span class="line">#返回字节数，如<span class="type">int</span>返回<span class="number">4</span></span><br><span class="line">#对于数组，主函数使用<span class="keyword">sizeof</span>返回字节数，但是一旦调用数组，默认使用它的的指针，<span class="number">64</span>位计算机中<span class="keyword">sizeof</span>只能返回<span class="number">8</span>；</span><br></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">template &lt;typename T&gt;</span><br></pre></td></tr></table></figure><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">char</span> *p;</span><br><span class="line">    p=(<span class="type">char</span> *)<span class="built_in">malloc</span>(<span class="number">5</span>*<span class="keyword">sizeof</span>(<span class="type">char</span>));</span><br><span class="line"> <span class="comment">//p[i]</span></span><br><span class="line"><span class="built_in">free</span>(p);</span><br><span class="line"><span class="comment">//在堆中储存，最后要释放内存；</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> 大写字母  替换掉的值</span></span><br></pre></td></tr></table></figure><p>注意不用加分号</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a=<span class="number">0</span>;</span><br><span class="line">   <span class="type">char</span> b;</span><br><span class="line">   <span class="built_in">scanf</span>(<span class="string">&quot;%d\n%c&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;a=%d,b=%c&quot;</span>,a,b);</span><br></pre></td></tr></table></figure><p>上面的\n 的作用是确保下一个字符不因为输入回车而读入<br />注意%d 代表整形，%c 代表字符型（用双引号连结）</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sizeof</span>(变量或者类型)</span><br><span class="line">#返回字节数，如<span class="type">int</span>返回<span class="number">4</span></span><br><span class="line">#对于数组，主函数使用<span class="keyword">sizeof</span>返回字节数，但是一旦调用数组，默认使用它的的指针，<span class="number">64</span>位计算机中<span class="keyword">sizeof</span>只能返回<span class="number">8</span>；</span><br></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">template &lt;typename T&gt;</span><br></pre></td></tr></table></figure><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">char</span> *p;</span><br><span class="line">    p=(<span class="type">char</span> *)<span class="built_in">malloc</span>(<span class="number">5</span>*<span class="keyword">sizeof</span>(<span class="type">char</span>));</span><br><span class="line"> <span class="comment">//p[i]</span></span><br><span class="line"><span class="built_in">free</span>(p);</span><br><span class="line"><span class="comment">//在堆中储存，最后要释放内存；</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -71,90 +133,6 @@
       
     <summary type="html">&lt;p&gt;&lt;a name=&quot;uL6me&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;弱类型&quot;&gt;&lt;a href=&quot;#弱类型&quot; class=&quot;headerlink&quot; title=&quot;弱类型&quot;&gt;&lt;/a&gt;弱类型&lt;/h2&gt;&lt;p&gt;&amp;#x3D;&amp;#x3D;&amp;#x3D;严格相等&lt;br /&gt;&amp;#x3D;&amp;#x3</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>周报11.13</title>
-    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.13%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
-    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.13%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
-    <published>2024-01-27T15:54:20.424Z</published>
-    <updated>2024-01-27T16:06:46.787Z</updated>
-    
-    <content type="html"><![CDATA[<p><a name="cf162eb8"></a></p><h3 id="学习Linux操作vim使用"><a href="#学习Linux操作vim使用" class="headerlink" title="学习Linux操作vim使用"></a>学习Linux操作vim使用</h3><p><a name="56a1c4c9"></a></p><h3 id="刷buu题"><a href="#刷buu题" class="headerlink" title="刷buu题"></a>刷buu题</h3><p><a name="c90dd22e"></a></p><h3 id="Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）"><a href="#Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）" class="headerlink" title="Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）"></a>Linux服务器写一句话木马（但是不知道怎么用蚁剑连接虚拟机）</h3><p><a name="90f04676"></a></p><h3 id="geek-做题easy-php"><a href="#geek-做题easy-php" class="headerlink" title="geek 做题easy_php"></a>geek 做题easy_php</h3><p><a name="e073ad4e"></a></p><h3 id="正在学习反序列化"><a href="#正在学习反序列化" class="headerlink" title="正在学习反序列化"></a>正在学习反序列化</h3><p><a name="YrANj"></a></p><h3 id="爬虫知识了解"><a href="#爬虫知识了解" class="headerlink" title="爬虫知识了解"></a>爬虫知识了解</h3>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;cf162eb8&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;学习Linux操作vim使用&quot;&gt;&lt;a href=&quot;#学习Linux操作vim使用&quot; class=&quot;headerlink&quot; title=&quot;学习Linux操作vim使用&quot;&gt;&lt;/a&gt;学习Linux操作vim使</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>周报11.5</title>
-    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.5%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
-    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A511.5%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
-    <published>2024-01-27T15:54:06.256Z</published>
-    <updated>2024-01-27T16:07:04.736Z</updated>
-    
-    <content type="html"><![CDATA[<p><a name="804a0841"></a></p><h1 id="11-5周报"><a href="#11-5周报" class="headerlink" title="11.5周报"></a>11.5周报</h1><p><a name="a19c221c"></a></p><h2 id="python爬虫学习"><a href="#python爬虫学习" class="headerlink" title="python爬虫学习"></a>python爬虫学习</h2><p>学习视频<a href="https://www.bilibili.com/video/BV1d54y1g7db/?p=12&spm_id_from=333.880.my_history.page.click">【11-理论课】下一步是什么？_哔哩哔哩_bilibili</a></p><p><a name="97d39be4"></a></p><h2 id="正则表达式学习"><a href="#正则表达式学习" class="headerlink" title="正则表达式学习"></a>正则表达式学习</h2><p>学习视频<a href="https://www.bilibili.com/video/BV19t4y1y7qP/?spm_id_from=333.880.my_history.page.click">正则表达式30分钟入门40分钟进阶（绝对能学会）_哔哩哔哩_bilibili</a></p><p><a name="fd4bb8a0"></a></p><h2 id="C-类，链表，python基础代码复习"><a href="#C-类，链表，python基础代码复习" class="headerlink" title="C++类，链表，python基础代码复习"></a>C++类，链表，python基础代码复习</h2><p>黑马程序员</p><p><a name="d25013f4"></a></p><h2 id="web-反序列化学习"><a href="#web-反序列化学习" class="headerlink" title="web-反序列化学习"></a>web-反序列化学习</h2><p>ctf-show</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;804a0841&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;11-5周报&quot;&gt;&lt;a href=&quot;#11-5周报&quot; class=&quot;headerlink&quot; title=&quot;11.5周报&quot;&gt;&lt;/a&gt;11.5周报&lt;/h1&gt;&lt;p&gt;&lt;a name=&quot;a19c221c&quot;&gt;&lt;/a&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>周报3.12</title>
-    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.12%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
-    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.12%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
-    <published>2024-01-27T15:53:40.949Z</published>
-    <updated>2024-01-27T16:07:22.660Z</updated>
-    
-    <content type="html"><![CDATA[<p><a name="2aa09912"></a></p><h2 id="学习基本的php语法和html语法"><a href="#学习基本的php语法和html语法" class="headerlink" title="学习基本的php语法和html语法"></a>学习基本的php语法和html语法</h2><p><a name="2bae96ba"></a></p><h2 id="看教程制作一个简单登录界面"><a href="#看教程制作一个简单登录界面" class="headerlink" title="看教程制作一个简单登录界面"></a>看教程制作一个简单登录界面</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span> =<span class="string">&#x27;UTF-8&#x27;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>亡灵登录网站<span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;dl.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>账号：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;account&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p1</span>&gt;</span>验证码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">p1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;登录&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$zh</span>=<span class="variable">$_POST</span>[<span class="string">&#x27;account&#x27;</span>];</span><br><span class="line"><span class="variable">$mm</span>=<span class="variable">$_POST</span>[<span class="string">&#x27;password&#x27;</span>];</span><br><span class="line"><span class="variable">$yz</span>=<span class="variable">$_POST</span>[<span class="string">&#x27;check&#x27;</span>];</span><br><span class="line"><span class="variable">$data</span>=[<span class="string">&#x27;账号&#x27;</span>=&gt;<span class="variable">$zh</span>,<span class="string">&#x27;密码&#x27;</span>=&gt;<span class="variable">$mm</span>,<span class="string">&#x27;验证码&#x27;</span>=&gt;<span class="variable">$yz</span>];</span><br><span class="line"><span class="keyword">foreach</span>(<span class="variable">$data</span> <span class="keyword">as</span> <span class="variable">$key</span>=&gt;<span class="variable">$item</span>)</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;你输入的<span class="subst">$key</span>为<span class="subst">$item</span>&lt;br/&gt;&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure><p><a name="a4f98c00"></a></p><h2 id="在ctfhub上刷基础题"><a href="#在ctfhub上刷基础题" class="headerlink" title="在ctfhub上刷基础题"></a>在ctfhub上刷基础题</h2><p>ps:碰到一道扫描目录的，正在找软件</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;2aa09912&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;学习基本的php语法和html语法&quot;&gt;&lt;a href=&quot;#学习基本的php语法和html语法&quot; class=&quot;headerlink&quot; title=&quot;学习基本的php语法和html语法&quot;&gt;&lt;/a&gt;学习基本</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>周报3.3</title>
-    <link href="https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.3%E9%BB%84%E4%BF%8A%E8%B1%AA/"/>
-    <id>https://liminghjh.github.io/2024/01/27/%E5%91%A8%E6%8A%A53.3%E9%BB%84%E4%BF%8A%E8%B1%AA/</id>
-    <published>2024-01-27T15:53:24.269Z</published>
-    <updated>2024-01-27T16:07:45.642Z</updated>
-    
-    <content type="html"><![CDATA[<p><a name="bf1590dc"></a></p><h1 id="学习了请求响应报文的基本元素和其意义"><a href="#学习了请求响应报文的基本元素和其意义" class="headerlink" title="学习了请求响应报文的基本元素和其意义"></a>学习了请求响应报文的基本元素和其意义</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GET /canonical.html HTTP/<span class="number">1.1</span></span><br><span class="line">Host: detectportal.firefox.com</span><br><span class="line">User-Agent: Mozilla/<span class="number">5.0</span> (Windows NT <span class="number">10.0</span>; Win64; x64; rv:<span class="number">109.0</span>) Gecko/<span class="number">20100101</span> Firefox/<span class="number">110.0</span></span><br><span class="line">Accept: *<span class="comment">/*</span></span><br><span class="line"><span class="comment">Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2</span></span><br><span class="line"><span class="comment">Accept-Encoding: gzip, deflate</span></span><br><span class="line"><span class="comment">Cache-Control: no-cache</span></span><br><span class="line"><span class="comment">Pragma: no-cache</span></span><br><span class="line"><span class="comment">Connection: close</span></span><br></pre></td></tr></table></figure><p><a name="409882cb"></a></p><h1 id="下载必要软件ida64，phpstudy-安装kali-linux下载Wireshark"><a href="#下载必要软件ida64，phpstudy-安装kali-linux下载Wireshark" class="headerlink" title="下载必要软件ida64，phpstudy,安装kali-linux下载Wireshark"></a>下载必要软件ida64，phpstudy,安装kali-linux下载Wireshark</h1><p><a name="340ecf25"></a></p><h1 id="一边刷入门题一边了解解题流程"><a href="#一边刷入门题一边了解解题流程" class="headerlink" title="一边刷入门题一边了解解题流程"></a>一边刷入门题一边了解解题流程</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">题目考点</span><br><span class="line">HTTP Method</span><br><span class="line">解题思路</span><br><span class="line">HTTP Method 是可以自定义的，并且区分大小写，直接用 CTFHUB 方法请求 index.php 即可拿到 flag.</span><br></pre></td></tr></table></figure><p><a name="5521c431"></a></p><h2 id="做一道爆破题认识base64编码"><a href="#做一道爆破题认识base64编码" class="headerlink" title="做一道爆破题认识base64编码"></a>做一道爆破题认识base64编码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">31</span>YWRtaW46Nzc3Nzc3Nw==</span><br></pre></td></tr></table></figure><p>第一次碰到完全没思路，跟着题解模仿了一遍</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;bf1590dc&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;学习了请求响应报文的基本元素和其意义&quot;&gt;&lt;a href=&quot;#学习了请求响应报文的基本元素和其意义&quot; class=&quot;headerlink&quot; title=&quot;学习了请求响应报文的基本元素和其意义&quot;&gt;&lt;/a&gt;学</summary>
       
     
     
